@@ -5,11 +5,18 @@
     <title>GitApp</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="HandheldFriendly" content="true" />
-
-    <link rel="import" href="src/javascript/GitApp.js">
 </head>
 
 <body>
 </body>
+<script type="module">
+    import('./src/javascript/GitApp.js')
+        .then(() => {
+            let app = new GitApp();
+            app.run();
+        }, (e) => {
+            console.error(e);
+        });
+</script>
 
 </html>

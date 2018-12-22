@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "pure web app for committing data without webserver (e.g. on github)",
   "dependencies": {
-    "PryoInc.github.io": "0.1.0"
+    "isomorphic-git": "0.47.0"
   },
   "devDependencies": {},
   "scripts": {
